@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "7623223c-5bf7-4499-86c1-51794a9386cb",
+		"name": "Calendar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22119127"
+	},
+	"item": [
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Suraj\",\r\n    \"email\":\"suraj@yopmail.com\",\r\n    \"age\":\"24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/calendar/api/createUser.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"calendar",
+						"api",
+						"createUser.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Suraj\",\r\n    \"email\":\"suraj@yopmail.com\",\r\n    \"age\":\"24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/calendar/api/createUser.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"calendar",
+								"api",
+								"createUser.php"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 26 Apr 2023 18:15:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Win64) OpenSSL/1.0.2q PHP/5.6.40"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.40"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"User created successfully.\",\n    \"data\": {\n        \"name\": \"Suraj\",\n        \"email\": \"suraj@yopmail.com\",\n        \"age\": \"24\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "fetchUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/calendar/api/fetchUsers.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"calendar",
+						"api",
+						"fetchUsers.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "fetchUsers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/calendar/api/fetchUsers.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"calendar",
+								"api",
+								"fetchUsers.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 26 Apr 2023 18:20:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Win64) OpenSSL/1.0.2q PHP/5.6.40"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.40"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "559"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"5 record found.\",\n    \"data\": {\n        \"body\": [\n            {\n                \"id\": \"1\",\n                \"name\": \"\",\n                \"email\": \"\",\n                \"age\": \"0\",\n                \"created_on\": \"2023-04-26 19:57:31\"\n            },\n            {\n                \"id\": \"2\",\n                \"name\": \"Suraj\",\n                \"email\": \"suraj@yopmail.com\",\n                \"age\": \"24\",\n                \"created_on\": \"2023-04-26 19:58:54\"\n            },\n            {\n                \"id\": \"3\",\n                \"name\": \"Suraj\",\n                \"email\": \"suraj@yopmail.com\",\n                \"age\": \"24\",\n                \"created_on\": \"2023-04-26 20:04:11\"\n            },\n            {\n                \"id\": \"4\",\n                \"name\": \"Suraj\",\n                \"email\": \"suraj@yopmail.com\",\n                \"age\": \"24\",\n                \"created_on\": \"2023-04-26 20:04:28\"\n            },\n            {\n                \"id\": \"5\",\n                \"name\": \"Suraj\",\n                \"email\": \"suraj@yopmail.com\",\n                \"age\": \"24\",\n                \"created_on\": \"2023-04-26 20:15:20\"\n            }\n        ],\n        \"itemCount\": 5\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "createMeeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"joinersId\":\"2\",\r\n    \"title\":\"All hands meet\",\r\n    \"duration\":\"60\",\r\n    \"start_date\":\"2023-04-29 01:19:00\",\r\n    \"end_date\":\"2023-04-29 02:19:00\",\r\n    \"created_by\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/calendar/api/createMeeting.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"calendar",
+						"api",
+						"createMeeting.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createMeeting",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"joinersId\":\"2\",\r\n    \"title\":\"All hands meet\",\r\n    \"duration\":\"30\",\r\n    \"start_date\":\"2023-04-27 00:19:00\",\r\n    \"end_date\":\"2023-04-27 00:39:00\",\r\n    \"created_by\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/calendar/api/createMeeting.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"calendar",
+								"api",
+								"createMeeting.php"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 26 Apr 2023 18:58:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Win64) OpenSSL/1.0.2q PHP/5.6.40"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.40"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "217"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Meeting Scheduled successfully.\",\n    \"data\": {\n        \"joinersId\": \"2\",\n        \"title\": \"All hands meet\",\n        \"duration\": \"30\",\n        \"start_date\": \"2023-04-27 00:19:00\",\n        \"end_date\": \"2023-04-27 00:39:00\",\n        \"created_by\": \"1\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "fetchMeetings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/calendar/api/fetchMeetings.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"calendar",
+						"api",
+						"fetchMeetings.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "fetchMeetings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/calendar/api/fetchMeetings.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"calendar",
+								"api",
+								"fetchMeetings.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 26 Apr 2023 20:11:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Win64) OpenSSL/1.0.2q PHP/5.6.40"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.40"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"3 record found.\",\n    \"data\": {\n        \"body\": [\n            {\n                \"id\": \"2\",\n                \"title\": \"All hands meet\",\n                \"joineeName\": \"Suraj\",\n                \"duration\": \"30\"\n            },\n            {\n                \"id\": \"4\",\n                \"title\": \"All hands meet\",\n                \"joineeName\": \"Suraj\",\n                \"duration\": \"60\"\n            },\n            {\n                \"id\": \"3\",\n                \"title\": \"All hands meet\",\n                \"joineeName\": \"Sam\",\n                \"duration\": \"60\"\n            }\n        ],\n        \"itemCount\": 3\n    }\n}"
+				}
+			]
+		}
+	]
+}
